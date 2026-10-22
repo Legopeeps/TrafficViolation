@@ -5,22 +5,28 @@
 This submission aims to showcase my knowledge of both frontend and backend web development for the module FullStack development. I aimed to create a prototype webpage for a hypothetical traffic system, showcasing both general user & admin access control - admins with the ability to view and manipulate users, officers and traffic offence details. 
 
 # How to run:
-With the source folder, execute the file "run_app.bat", which once followed to the end, will open a localhost link to access the designed website in practice. 
+With the source folder, execute the file "run_app.bat", which once followed to the end, will open a localhost link to access the designed website in practice. Once the website is opened, you can navigate between the different pages and explore with the content of the database.
+This is found: ```FS ASS3 --> REvisedBackend --> TrafficViolationsDB.sql```
+For the purpose of this prototype, the user data flagged as admin/officer from the the SQL database can be input into the website to access the admin side.
 
 # Folder Structure
 
-Building on Assignment two's submission contents, the folder structure within this has been altered to accomodate the frontend development practices I have used. Within the root folder, the updated .batch file, dockerfile and .dockerignore have been moved. In addition, there are two subfolders of:
+Building on assignment two's submission contents, the folder structure here was altered to accommodate and better highlight the frontend development practices I have used. Within root, there are two subfolders of:
 
-- Frontend: containing the .css, .html and .js code
+- Frontend: containing the CSS and HTML code
   - adminPortals: pages created for the administrator as per the brief
   - driverPortals: pages created for the drivers/general users
 
-- Backend: the updated contents of the fastAPI implementation to accomodate my attempt at the higher grade boundaries within this assignment (implementation of CORS, etc.)
+- Backend
+  - the updated contents of the fastAPI implementation
+  - implementation of Cross-Origin Resource Sharing
+  - Readable, well laid out CRUD operations (commented)
+  - 
 
 This structure was chosen to accomodate the small scale of the project, alongside keeping it understandable. This remains scalable due to it's simplistic nature, and if it were to be expanded upon in future the naming of files and location within folders allows for separation easily. 
 
 ## Dependencies (within *"requirements.txt"*
-If these are not installed on the device, running "run_app.bat" will ensure they are part of the package through the docker container. 
+If these are not installed on the device, running "run_app.bat" will ensure they are part of the package through the docker container & Dockerfile. 
 ```
 fastapi
 uvicorn
