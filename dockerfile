@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-WORKDIR /RevisedBackend
+WORKDIR /FS ASS3
 
 # Install dependencies
 COPY requirements.txt .
